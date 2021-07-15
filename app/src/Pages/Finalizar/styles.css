@@ -13,18 +13,19 @@
 .buy-frame{
     width: fit-content;
     border-radius: 5px;
-    background-color: rgb(124, 30, 30);
+    background-color: rgb(255, 231, 214);
     border: 4px solid  rgb(114, 59, 59);
     margin-left: 200px;
+    margin-bottom: 30px;
 }
 .buy-container{
     padding-left: 15px;
     padding-right: 400px;
     width: fit-content;
-    background-color: white;
+    background-color: rgb(255, 231, 214);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: left;
 }
 .buy-container li{
@@ -35,10 +36,17 @@
     list-style-type: none;
 }
 
+.buy-cart-list{
+    list-style-type: none;
+    border:2px solid rgb(124, 30, 30);
+    border-radius: 10px;
+    margin: 10px;
+}
+
 #buy-title{
     padding-left: 30px;
     width: fit-content;
-    background-color: cadetblue;
+    color: rgb(124, 30, 30);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -46,19 +54,21 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: row;
-    background-color: chocolate;
+    min-height: 440px;
 }
 
 #box-options h1{
     margin: 10px;
-
+    color: rgb(124, 30, 30);
 }
 
 #options{
-    background-color: cornflowerblue;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid rgb(124, 30, 30);
+    border-radius: 10px;
 }
 .botao-entrega{
     margin-top: 20px;
@@ -72,8 +82,48 @@
 }
 .botao-entrega:hover{
     cursor: pointer;
+    color: rgb(255, 231, 214);
 }
 .botao-entrega:focus{
     background-color: rgb(68, 16, 16);
     transform: translateY(1px);
+}
+
+.finalizar-compra{
+    margin-bottom: 20px;
+    margin-top: 90%;
+    width: 50%;
+    height: 30px;
+    color: white;
+    border: 4px solid rgb(114, 59, 59);
+    background-color: rgb(124, 30, 30);
+    box-shadow:  black;
+    border-radius: 5px;
+}
+.finalizar-compra:hover{
+    cursor: pointer;
+    color: rgb(255, 231, 214);
+}
+.finalizar-compra:focus{
+    background-color: rgb(68, 16, 16);
+    transform: translateY(1px);
+}
+
+#moto{
+    transition: 1s;
+    animation: grau 2s infinite;
+}
+#gift{
+    transition: 1s;
+    animation: jump 2s infinite;
+}
+@keyframes grau{
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(-45deg)}
+    100%{transform: rotate(0deg)}
+}
+@keyframes jump{
+    0%{transform: translateY(-2px)}
+    50%{transform: translateY(2px)}
+    100%{transform: translateY(-2px)}
 }

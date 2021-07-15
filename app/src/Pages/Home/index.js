@@ -18,7 +18,6 @@ export default function Home(){
             <h5>com qualidade premium</h5>
             </div>
             <h1>Desde 1999</h1>
-            <h5 id='efeito'>"O trabalho é porco mas é bem feito!"</h5>
             </div>
             <h4 id='contato'>Contato 2223-2221 / elporco@gmail.com</h4>
         </div>

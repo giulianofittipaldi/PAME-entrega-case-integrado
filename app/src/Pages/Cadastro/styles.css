@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(70, 17, 17);
     border-radius: 10px;
     width: 550px;
     height: 100%;
@@ -64,6 +64,7 @@ form p{
 }
 #botao-cadastrar:hover{
     cursor: pointer;
+    color: rgb(255, 231, 214);
 }
 #botao-cadastrar:active{
     background-color: rgb(68, 16, 16);

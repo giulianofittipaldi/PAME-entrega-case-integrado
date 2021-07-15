@@ -1,7 +1,7 @@
 import './styles.css'
 import Header from '../../Components/Header';
 import React, { useState } from 'react'
-import Card from '../../Components/Header/Card'
+import Card from '../../Components/Card'
 import { RiShoppingCartFill } from 'react-icons/ri'
 import { RiKnifeLine } from 'react-icons/ri'
 import { CgSmileSad } from 'react-icons/cg'

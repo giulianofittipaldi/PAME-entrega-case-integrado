@@ -1,7 +1,7 @@
 import './styles.css'
 import Header from '../../Components/Header';
 import { Link } from 'react-router-dom';
-
+import { IoReturnUpBack } from 'react-icons/io5'
 
 
 export default function Cadastro(){
@@ -10,6 +10,7 @@ export default function Cadastro(){
     return(
         <>
         <Header/>
+        <Link to='/login' className='seta-voltar'><IoReturnUpBack /></Link>
         <div id='fit-container'>
         <div className='container-login'>
             <div className='login-box'>
