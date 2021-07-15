@@ -8,6 +8,7 @@ import { CgSmileSad } from 'react-icons/cg'
 import linguiçaToscana from '../../Assets/Images/linguiça-toscana.jpeg'
 import linguiçaDefumada from '../../Assets/Images/linguica-defumada.jpeg'
 import linguiçaCalabresa from '../../Assets/Images/LINGUICA-CALABRESA-DEFUMADA.jpeg'
+import { Link } from 'react-router-dom';
 
 
 export default function Products(){
@@ -57,31 +58,32 @@ export default function Products(){
     const cleanCart=()=>{
         setCartList([])
     }
-    // const removeProduct=(item)=>{
-    //     let newList=cartList.map((item, index)=>(
-    //         item.id!==index?item:{}
-        
-    //     ))
-    //     setCartList(newList)
-    //     console.log(newList)
-    // }
-
+   
     const renderList = list.map((item, index)=>(
         <li key={index}>
             <Card data={item} onClick={()=>addProduct(item)}/>
         </li>
     ));
     
-    const renderCartList = cartList.map((item, index)=>(
+    let buyList=[]
+
+    const renderCartList = cartList.map((item, index)=>{
+        buyList=[...buyList, item] ;
+        return(
         <li key={index}>
-            <Card data={item} /*onClick={()=>removeProduct(item)}*//>
+            <Card data={item}/>
         </li>
-    ));
+
+    )});
+    
+    function Click(){
+        localStorage.setItem('Produtos', JSON.stringify(buyList))
+    }
 
     return(
        <> 
         <Header/>
-        <div id='line'>
+        <div className='line'>
         </div>
         <div className="main">
         <div className='container'>
@@ -108,7 +110,9 @@ export default function Products(){
                 </div>
                 <div className='buttons-container'>
                     <button  onClick={cleanCart}className='finalizar'> Limpar carrinho </button>
-                    <button className='finalizar'> Finalizar compra </button>
+                    <Link to='/finalizarCompra' id='botao-finalizar'><button className='finalizar' onClick={Click}>
+                        Finalizar compra </button>
+                    </Link>
                 </div>
             </div>
         </div>
