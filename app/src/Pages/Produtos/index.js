@@ -21,7 +21,7 @@ export default function Products(){
             validade: ' 12/07',
             peso: ' 2 Kg',
             preco: ' R$ 10',
-            unidade: ' Barra',
+            unidade: ' 3 unidades',
             image: linguiçaToscana
        },
        {
@@ -31,7 +31,7 @@ export default function Products(){
             validade: ' 14/07',
             peso: ' 1 Kg',
             preco: ' R$ 20',
-            unidade: ' Fundão',
+            unidade: ' 2 unidades',
             image: linguiçaCalabresa
        },
        {
@@ -41,7 +41,7 @@ export default function Products(){
             validade: ' 22/07',
             peso: ' 5 Kg',
             preco: ' R$ 15',
-            unidade: ' Niterói',
+            unidade: ' 5 unidades',
             image: linguiçaDefumada
        }
     ]

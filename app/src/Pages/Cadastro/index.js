@@ -22,8 +22,8 @@ export default function Cadastro(){
                 <input type="text"></input>
                 <p>Senha</p>
                 <input type="password"></input>
-                <p>Confirme sua senha</p>
-                <input type="password"></input>
+                <p>Endereço</p>
+                <input type="text"></input>
                 <p>Telefone de contato</p>
                 <input type="text"></input>
                 <Link to='/login'>

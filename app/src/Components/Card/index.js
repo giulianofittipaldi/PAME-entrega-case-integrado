@@ -22,7 +22,7 @@ export default function Card({data, onClick}){
                 <strong className='card-title'>Preço</strong>:{data.preco}
             </h3>
             <h3>
-                <strong className='card-title'>Unidade</strong>:{data.unidade}
+                <strong className='card-title'>Unidades</strong>:{data.unidade}
             </h3>
             </div>
             <img id='imagem'src={data.image}/>
